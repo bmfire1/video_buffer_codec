@@ -1,0 +1,3 @@
+/home/ubuntu/newspace/ocr/003src/video_codec/ffmpeg/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/newspace/ocr/003src/video_codec/ffmpeg/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/newspace/ocr/003src/video_codec/ffmpeg/build/CMakeFiles/video_buffer_dec.dir
