@@ -1,12 +1,12 @@
 #pragma once
 #include "opencv2/opencv.hpp"
-#include "common.hpp"
 #include <functional>
 #include <thread>
 #include <mutex>
 #include <atomic>
 #include <vector>
 #include <queue>
+#include <sys/time.h>
 
 
 extern "C" {
@@ -21,6 +21,11 @@ extern "C" {
 #include "libavutil/file.h"
 }
 
+inline long GetTimestampMs(){
+  struct timeval t;
+  gettimeofday(&t, nullptr);
+  return t.tv_sec*1000 + t.tv_usec/1000;
+}
 
 size_t buffer_size = 1024 * 32;
 
